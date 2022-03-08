@@ -1,0 +1,165 @@
+.input {
+  position: relative;
+  width: 100%;
+}
+
+.input span {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: #272e33;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input input {
+  width: 100%;
+  height: 45px;
+  background: #f5f8fa;
+  border: 1px solid #f5f8fa;
+  border-radius: 6px;
+  padding: 18px 12px 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #272e33;
+}
+
+.input input[data-dirty=true] ~ label, .input input:focus ~ label {
+  transform: translate(0, -5px) scale(1);
+  font-size: 10px;
+}
+
+.input input[type=password] {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.input input[type=password].parsley-error ~ .icon-alert {
+  display: none;
+}
+
+.input input[type=password].parsley-error ~ .input__icon i:before {
+  color: red;
+}
+
+.input input:focus {
+  outline: none;
+  background: #fff;
+  border: 1.5px solid #003d66;
+}
+
+.input input.parsley-error {
+  border-color: #af2246;
+  color: #af2246;
+}
+
+.input input.parsley-error ~ .icon-alert {
+  display: block;
+}
+
+.input input::-webkit-outer-spin-button,
+.input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input input:-webkit-autofill,
+.input input:-webkit-autofill:hover,
+.input input:-webkit-autofill:focus,
+.input input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f5f8fa inset !important;
+  -webkit-text-fill-color: #272e33;
+}
+
+.input label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  color: #8f9aa1;
+  transition: 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.input--icon .input__icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #c2cad0;
+  padding: 0;
+}
+
+.input--icon .input__icon i {
+  display: block;
+}
+
+.input--icon .input__icon i:before {
+  font-size: 20px;
+  display: block;
+}
+
+.input--icon .input__icon.visible i:before {
+  content: "\f06e";
+}
+
+.input--icon input {
+  padding-right: 50px;
+}
+
+.input--icon input.parsley-error ~ .icon-alert {
+  display: none;
+}
+
+.input--icon input.parsley-error ~ .input__icon i:before {
+  color: red;
+}
+
+.textarea {
+  position: relative;
+  width: 100%;
+}
+
+.textarea textarea {
+  width: 100%;
+  min-height: 160px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  background: #f5f8fa;
+  padding: 18px 12px 6px;
+  border-radius: 6px;
+  border: 1px solid #f5f8fa;
+  resize: none;
+}
+
+.textarea textarea[data-dirty=true] ~ label, .textarea textarea:focus ~ label {
+  transform: translate(0, -5px) scale(1);
+  font-size: 10px;
+}
+
+.textarea textarea:focus {
+  outline: none;
+}
+
+.textarea textarea.parsley-error {
+  border-color: #cb2c30;
+}
+
+.textarea label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #8f9aa1;
+  transition: 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+/*# sourceMappingURL=input.css.map */
+
+/*# sourceMappingURL=input.css.map */

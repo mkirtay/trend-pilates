@@ -1,0 +1,29 @@
+@media screen and (max-width: 767px) {
+  .u-section-1 {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 270px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .u-section-1 .u-container-layout-1 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .u-section-1 .u-shape-1 {
+    margin-left: calc((100% - 940px) / 2 - 35px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .u-section-1 .u-layout-wrap-1 {
+    width: 100%;
+    margin-top: -330px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,29 @@
+.form {
+  &__row {
+    margin-bottom: 20px;
+  }
+
+  &-dual {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .form__row {
+      margin-right: 10px;
+      flex: 0 calc(50% - 10px);
+    }
+  }
+
+  &-third {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .form__row {
+      margin-right: 10px;
+      flex: 0 calc(33% - 10px);
+    }
+  }
+}

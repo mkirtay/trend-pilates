@@ -1,0 +1,193 @@
+.header__logo {
+  display: block;
+  max-width: 84px;
+}
+.header__logo img {
+  display: block;
+  width: 100%;
+}
+.header__top {
+  background: #A45A95;
+}
+.header__middle {
+  padding: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .header__middle {
+    display: none;
+  }
+}
+.header__middle > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__middle .header-detail__item strong {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.83;
+  color: #715091;
+}
+.header__middle .header-detail__item span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #253342;
+}
+.header__bottom {
+  opacity: 0;
+  background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%);
+}
+@media screen and (max-width: 767px) {
+  .header__bottom > .container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: -26px;
+    right: -100%;
+    z-index: 101;
+    transition: all 0.2s ease;
+    max-width: 275px;
+    padding-top: 82px;
+    background: #fff;
+  }
+}
+.header__bottom > .container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  .header__bottom > .container nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.header__bottom > .container nav ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 16px;
+  padding: 16px 0;
+}
+.header__bottom > .container nav ul li a {
+  color: #253342;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.header__bottom > .container nav ul li a.active {
+  color: #A45A95;
+}
+.header__bottom > .container nav ul li + li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  width: 1px;
+  height: 14px;
+  background: #dbdbdb;
+}
+@media screen and (max-width: 767px) {
+  .header__bottom > .container nav ul li + li:before {
+    display: none;
+  }
+}
+.header__bottom > .container nav ul li:hover > a {
+  color: #A45A95;
+}
+.header__bottom > .container nav ul .header__list {
+  position: relative;
+}
+.header__bottom > .container nav ul .header__list .header__list__submenu {
+  display: block;
+  opacity: 0;
+  min-width: 230px;
+  position: absolute;
+  top: 54px;
+  left: -16px;
+  width: 100%;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  transition: all 0.1s linear;
+  z-index: 100;
+  background: linear-gradient(to bottom, #f0f0f0 0%, #ffffff 100%);
+  pointer-events: none;
+}
+.header__bottom > .container nav ul .header__list .header__list__submenu a {
+  display: block;
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+}
+.header__bottom > .container nav ul .header__list .header__list__submenu a:hover {
+  color: #A45A95;
+}
+.header__bottom > .container nav ul .header__list:hover .header__list__submenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  transition: all 0.1s linear;
+}
+.header__bottom > .container > button {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__bottom > .container > button {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .header__bottom > .container > button svg {
+    width: 16px;
+  }
+  .header__bottom > .container > button svg path {
+    fill: #283341;
+  }
+}
+.header__bottom.active {
+  opacity: 1;
+}
+.header__bottom.active > .container {
+  right: 0;
+}
+@media screen and (max-width: 767px) {
+  .header__bottom.active:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+  }
+}
+.header__mobile {
+  display: none;
+  padding: 16px 0;
+}
+@media screen and (max-width: 767px) {
+  .header__mobile {
+    display: block;
+  }
+}
+.header__mobile > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__mobile button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=header.css.map */

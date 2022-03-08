@@ -1,0 +1,72 @@
+.title_section {
+  background: #715091;
+  background: #A45A95;
+  padding: 30px 0;
+  text-align: left;
+}
+.title_section h1 {
+  display: inline-block;
+  color: #fff;
+  font-size: 38px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .title_section h1 {
+    font-size: 28px;
+  }
+}
+.title_section h1:before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  background: #fff;
+}
+
+.detail-content_section {
+  margin: 60px 0;
+}
+@media screen and (max-width: 767px) {
+  .detail-content_section {
+    margin: 30px 0;
+  }
+}
+.detail-content_section h2 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .detail-content_section h2 {
+    font-size: 20px;
+  }
+}
+.detail-content_section .content_images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.detail-content_section .content_images figure {
+  max-width: 300px;
+  max-height: 300px;
+  margin: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .detail-content_section .content_images figure {
+    max-width: 240px;
+    max-height: 240px;
+  }
+}
+.detail-content_section .content_images figure img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=detail-page.css.map */

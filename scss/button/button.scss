@@ -1,0 +1,85 @@
+.button {
+  min-width: 210px;
+  height: 40px;
+  display: inline-block;
+  background: #ffc40c;
+  color: #253342;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 42px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  box-shadow: inset 0 -2px 2px 0 rgba(0, 0, 0, 0.1), inset 0 2px 2px 0 rgba(255, 255, 255, 0.1);
+
+  @media screen and (max-width: 767px) {
+    height: 35px;
+    font-size: 14px;
+    padding: 10px;
+    line-height: .7;
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &:disabled, &.button--disabled {
+    background: #f5f8fa;
+    box-shadow: none;
+    color: #c2cad0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    background: #ffc40c;
+    color: #253342;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--secondary {
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+
+    &:hover {
+      color: #fff;
+      background: #000;
+    }
+  }
+
+  &--third {
+    color: #db3236;
+    background: #fff;
+    border: 1px solid #db3236;
+
+    &:hover {
+      background: #fff;
+      color: #db3236;
+    }
+  }
+
+  &--fifth {
+    color: #253342;
+    background: #fff;
+    border: 1px solid #253342;
+
+    &:hover {
+      background: #fff;
+      color: #253342;
+    }
+  }
+
+  &--gradient {
+    background-image: linear-gradient(97deg, #53baff 11%, #2465ff 88%);
+
+    &:hover {
+      background-image: linear-gradient(97deg, #53baff 11%, #2465ff 88%);
+    }
+  }
+
+}

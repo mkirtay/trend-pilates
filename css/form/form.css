@@ -1,0 +1,25 @@
+.form__row {
+  margin-bottom: 20px;
+}
+.form-dual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-dual .form__row {
+  margin-right: 10px;
+  flex: 0 calc(50% - 10px);
+}
+.form-third {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-third .form__row {
+  margin-right: 10px;
+  flex: 0 calc(33% - 10px);
+}
+
+/*# sourceMappingURL=form.css.map */

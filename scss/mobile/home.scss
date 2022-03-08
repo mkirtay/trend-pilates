@@ -1,0 +1,30 @@
+.u-section-1 {
+  @media screen and (max-width: 767px) {
+    padding: 0 30px;
+  }
+  .u-layout-cell-1 {
+    @media screen and (max-width: 767px) {
+      min-height: 270px ;
+      margin-bottom: 30px;
+    }
+  }
+
+  .u-container-layout-1 {
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  .u-shape-1 {
+    @media screen and (max-width: 767px) {
+      margin-left: calc(((100% - 940px) / 2) + -35px);
+    }
+  }
+
+  .u-layout-wrap-1 {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-top: -330px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.section--studio-contents .contents-wrapper > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .section--studio-contents .contents-wrapper > div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item {
+  width: 50%;
+  max-width: 460px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px -5px rgba(37, 51, 66, 0.5);
+  background-color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .section--studio-contents .contents-wrapper .contents-wrapper__item {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item + .contents-wrapper__item {
+  margin-left: 30px;
+}
+@media screen and (max-width: 767px) {
+  .section--studio-contents .contents-wrapper .contents-wrapper__item + .contents-wrapper__item {
+    margin-left: 0;
+  }
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > div {
+  padding: 20px 30px 20px 30px;
+}
+@media screen and (max-width: 767px) {
+  .section--studio-contents .contents-wrapper .contents-wrapper__item > div {
+    padding: 20px;
+  }
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > div h5 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > div p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #253342;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > div a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #253342;
+  text-decoration: underline;
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > figure {
+  margin: 0;
+}
+.section--studio-contents .contents-wrapper .contents-wrapper__item > figure img {
+  width: 100%;
+  max-height: 300px;
+}
+@media screen and (max-width: 767px) {
+  .section--studio-contents .contents-wrapper .contents-wrapper__item > figure img {
+    max-height: 250px;
+  }
+}
+
+/*# sourceMappingURL=section.css.map */
